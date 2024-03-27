@@ -143,6 +143,8 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### História 3 - Escolhendo o produto
 
+- Como funcionário quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
+
 ### Critério de aceitação
 
 - Campo com a mercadoria escolhida
@@ -152,5 +154,56 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### História 4 - Vendendo um produto
 
+- Como funcionário estou realizando a venda de um produto
+  
+### Critério de aceitação
+
 - Campo com forma de pagamento
 - Não permite vendas com quantidades que ultrapassam o estoque
+- Campo com a confirmação de valor, quantidade e forma de pagamento
+
+  
+## Histórias de usuário Gerente 
+
+### História 1 - Entrando no sistema
+
+- Como gerente quero entrar no sistema da loja
+
+### Critério de aceitação 
+
+- Campo para colocar o usuário
+- Campo para colocar a senha
+- Campo esqueci a senha
+
+### História 2 - Consultando produtos
+
+- Como gerente quero pesquisar um produto da loja
+
+### Critério de aceitação 
+
+- Campo para categoria de produtos
+- Campo para pesquisa de produtos 
+- Lista com acesso a categoria escolhida
+- Lista com acesso completo aos produtos
+
+### História 3 - Escolhendo o produto
+
+- Como gerente quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
+
+### Critério de aceitação
+
+- Campo com a mercadoria escolhida
+- Preço da mercadoria
+- Quantidade restante no estoque 
+- Campo com a quantidade de quantos produtos serão vendidos
+
+### História 4 - Vendendo um produto
+
+- Como gerente estou realizando a venda de um produto
+  
+### Critério de aceitação
+
+- Campo com forma de pagamento
+- Não permite vendas com quantidades que ultrapassam o estoque
+- Campo com a confirmação de valor, quantidade e forma de pagamento
+

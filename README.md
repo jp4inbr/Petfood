@@ -207,3 +207,56 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Não permite vendas com quantidades que ultrapassam o estoque
 - Campo com a confirmação de valor, quantidade e forma de pagamento
 
+### História 5 - Adicionando um produto
+
+- Como gerente quero adicionar um produto ao sistema
+
+### Critério de aceitação
+
+- Campo para pesquisa de produtos
+- Campo com um (+) para adicionar produtos
+- Campo onde será inserido o nome
+- Campo onde será inserido o preço
+- Campo onde será inserido a quantidade
+- Campo onde será inserido o NCM
+- Campo onde será inserido o código de barras
+- Campo para confirmação de dados
+- Mensagem produto adicionado com sucesso
+
+### História 6 - Alterando preço de um produto
+
+- Como gerente quero alterar o preço de um produto
+
+### Critério de aceitação
+
+- Campo para pesquisa de produtos
+- Campos com as informações do produto
+- Campo com o preço
+- Campo com a confirmação da alteração do produto
+- Mensagem produto alterado com sucesso
+
+### História 7 - Alterando quantidade de um produto
+
+- Como gerente quero alterar a quantidade de um produto
+
+### Critério de aceitação
+
+- Campo para pesquisa de produtos
+- Campos com as informações do produto
+- Campo com a quantidade
+- Campo com a confirmação da alteração do produto
+- Mensagem produto alterado com sucesso
+
+### História 8 - Excluindo um produto
+
+- Como gerente quero excluir um produto
+
+### Critério de aceitação
+
+- Campo para pesquisa de produtos
+- Campos com as informações do produto
+- Campo com um (x) para excluir um produto
+- Campo com a confirmação da exclusão do produto
+- Mensagem produto excluído com sucesso
+
+

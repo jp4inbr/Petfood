@@ -116,13 +116,13 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 # 6. Aprovação
 
-# Histórias de usuário 
+# Histórias de usuário
 
-## Histórias de usuário Funcionário
+## Histórias de usuário Funcionário/Gerente
 
 ### História 1 - Entrando no sistema
 
-- Como funcionário quero entrar no sistema da loja
+- Como funcionário/gerente quero colocar as minhas informações (login, senha) para entrar no sistema
 
 ### Critério de aceitação 
 
@@ -130,82 +130,73 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo para colocar a senha
 - Campo esqueci a senha
 
-### História 2 - Consultando produtos
+### História 2 - Menu do sistema
 
-- Como funcionário quero pesquisar um produto da loja
+- Como funcionário/gerente , após o login , observo o menu do sistema , para que possa prosseguir a uma funcionalidade do sistema.
+
+### Critério de aceite
+
+- Campo para vendas
+- Campo para cadastro de usuários (exclusivo para o gerente)
+- Campo para estoque (exclusivo para o gerente)
+- Campo para financeiro (exclusivo para o gerente)
+
+### História 3 - Campo de vendas
+
+- Como funcionário/gerente quero entrar na aba de vendas para vender/pesquisar um produto
+
+### Critério de aceite
+
+- Tela de pré-venda
+- Campo com a lista de produtos escolhidos
+- Campo com as formas de pagamento (dinheiro, cartão, pix)
+- Campo para cancelar pré-venda
+- Caso escolha a opção cancelar pré-venda, todos os produtos escolhidos sairão da pré-venda
+- Campo para cancelar um produto
+- Caso escolha a opção cancelar um produto, será permitido a escolha de um produto para ser retirado da pré-venda 
+- Campo para pesquisa de produtos
+- Caso escolha o campo de pesquisa de produtos, aparecerá uma lista completa dos produtos e uma aba para pesquisar um produto específico
+- Campo para categorias de produtos
+- Caso escolha o campo de categorias de produtos, aparecerá 4 campos
+- Campo Alimentícios, Campo medicamentos, Campo brinquedos, Campo acessórios
+
+
+
+### História 4 - Consultando produtos
+
+- Como funcionário/gerente quero pesquisar um produto da loja para obter informações sobre ele
 
 ### Critério de aceitação 
-
-- Campo para categoria de produtos
-- Campo para pesquisa de produtos 
+- Tela de pré-venda
+- Campo para categoria de produtos (alimentícios, medicamentos, brinquedos, acessórios)
 - Lista com acesso a categoria escolhida
+- Campo para pesquisa de produtos 
 - Lista com acesso completo aos produtos
 
-### História 3 - Escolhendo o produto
+### História 5 - Escolhendo o produto
 
-- Como funcionário quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
+- Como funcionário/gerente quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
 
 ### Critério de aceitação
 
 - Campo com a mercadoria escolhida
 - Preço da mercadoria
 - Quantidade restante no estoque 
-- Campo com a quantidade de quantos produtos serão vendidos
 
-### História 4 - Vendendo um produto
+### História 6 - Vendendo um produto
 
-- Como funcionário estou realizando a venda de um produto
+- Como funcionário/gerente quero escolher um produto para realizar a venda do mesmo
   
 ### Critério de aceitação
-
-- Campo com forma de pagamento
-- Não permite vendas com quantidades que ultrapassam o estoque
-- Campo com a confirmação de valor, quantidade e forma de pagamento
-
-  
-## Histórias de usuário Gerente 
-
-### História 1 - Entrando no sistema
-
-- Como gerente quero entrar no sistema da loja
-
-### Critério de aceitação 
-
-- Campo para colocar o usuário
-- Campo para colocar a senha
-- Campo esqueci a senha
-
-### História 2 - Consultando produtos
-
-- Como gerente quero pesquisar um produto da loja
-
-### Critério de aceitação 
-
-- Campo para categoria de produtos
-- Campo para pesquisa de produtos 
-- Lista com acesso a categoria escolhida
-- Lista com acesso completo aos produtos
-
-### História 3 - Escolhendo o produto
-
-- Como gerente quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
-
-### Critério de aceitação
-
 - Campo com a mercadoria escolhida
-- Preço da mercadoria
-- Quantidade restante no estoque 
-- Campo com a quantidade de quantos produtos serão vendidos
-
-### História 4 - Vendendo um produto
-
-- Como gerente estou realizando a venda de um produto
-  
-### Critério de aceitação
-
+- Escolha de quantidade que será vendida de um determinado produto
+- Campo com a lista de produtos escolhidos , onde é mostrado nome, preço e quantidade
 - Campo com forma de pagamento
 - Não permite vendas com quantidades que ultrapassam o estoque
 - Campo com a confirmação de valor, quantidade e forma de pagamento
+
+  
+## Histórias de usuário Gerente (Exclusivo)
 
 ### História 5 - Adicionando um produto
 

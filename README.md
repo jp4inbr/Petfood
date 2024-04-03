@@ -137,6 +137,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 ### Critério de aceite
 
 - Campo para vendas
+  - Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo de vendas
 - Campo para cadastro de usuários (exclusivo para o gerente)
 - Campo para estoque (exclusivo para o gerente)
 - Campo para financeiro (exclusivo para o gerente)
@@ -151,14 +152,14 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a lista de produtos escolhidos
 - Campo com as formas de pagamento (dinheiro, cartão, pix)
 - Campo para cancelar pré-venda
-- Caso escolha a opção cancelar pré-venda, todos os produtos escolhidos sairão da pré-venda
+  - Caso escolha a opção cancelar pré-venda, todos os produtos escolhidos sairão da pré-venda
 - Campo para cancelar um produto
-- Caso escolha a opção cancelar um produto, será permitido a escolha de um produto para ser retirado da pré-venda 
+  - Caso escolha a opção cancelar um produto, será permitido a escolha de um produto para ser retirado da pré-venda 
 - Campo para pesquisa de produtos
-- Caso escolha o campo de pesquisa de produtos, aparecerá uma lista completa dos produtos e uma aba para pesquisar um produto específico
+  - Caso escolha o campo de pesquisa de produtos, aparecerá uma lista completa dos produtos e uma aba para pesquisar um produto específico
 - Campo para categorias de produtos
-- Caso escolha o campo de categorias de produtos, aparecerá 4 campos
-- Campo Alimentícios, Campo medicamentos, Campo brinquedos, Campo acessórios
+  - Caso escolha o campo de categorias de produtos, aparecerá 4 campos
+    - Campo Alimentícios, Campo medicamentos, Campo brinquedos, Campo acessórios
 
 
 
@@ -167,29 +168,35 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Como funcionário/gerente quero pesquisar um produto da loja para obter informações sobre ele
 
 ### Critério de aceitação 
-- Tela de pré-venda
-- Campo para categoria de produtos (alimentícios, medicamentos, brinquedos, acessórios)
-- Lista com acesso a categoria escolhida
-- Campo para pesquisa de produtos 
-- Lista com acesso completo aos produtos
+
+- Tela de pré-venda (Campo vendas)
+- Atalho/Botão para categoria de produto
+  - Ao escolher esse campo será redirecionado para as categorias (alimentícios, medicamentos, brinquedos, acessórios)
+     - Após escolher uma categoria, aparecerá uma lista com apenas produtos da categoria escolhida
+- Atalho/Botão para pesquisa de um produto 
+  - Ao escolher esse campo, aparecerá uma lista com todos os produtos(com barra de rolagem) e um campo para pesquisar um produto específico
 
 ### História 5 - Escolhendo o produto
 
-- Como funcionário/gerente quero escolher um produto da loja para encaminhá-lo ao setor de vendas ou para consultar o seu preço/quantidade no estoque
+- Como funcionário/gerente quero escolher um produto da loja para encaminhá-lo à pré-venda
 
 ### Critério de aceitação
 
-- Campo com a mercadoria escolhida
-- Preço da mercadoria
-- Quantidade restante no estoque 
+- Tela de pré-venda (Campo vendas)
+- Atalho/Botão para pesquisar um produto
+- Lista com os produtos
+ 
+
 
 ### História 6 - Vendendo um produto
 
 - Como funcionário/gerente quero escolher um produto para realizar a venda do mesmo
   
 ### Critério de aceitação
-- Campo com a mercadoria escolhida
-- Escolha de quantidade que será vendida de um determinado produto
+- Campo com a lista de produtos
+  - Após selecionar o produto, escolherá a quantidade que será vendida, após isso, o produto será redirecionado para a pré-venda
+- Produtos com quantidades zeradas não serão encaminhados para a pré-venda e aparecerá uma mensagem na tela:
+  - ''O produto não pode ser vendido pois não há quantidade no estoque''
 - Campo com a lista de produtos escolhidos , onde é mostrado nome, preço e quantidade
 - Campo com forma de pagamento
 - Não permite vendas com quantidades que ultrapassam o estoque

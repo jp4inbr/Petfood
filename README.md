@@ -122,7 +122,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### História 1 - Entrando no sistema
 
-- Como funcionário/gerente quero colocar as minhas informações (login, senha) para entrar no sistema
+- Como funcionário/gerente quero colocar as minhas informações (login, senha) para acessar o sistema
 
 ### Critério de aceitação 
 
@@ -136,20 +136,21 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### Critério de aceite
 
-- Campo para vendas
-  - Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo de vendas
-- Campo para cadastro de usuários (exclusivo para o gerente)
-- Campo para estoque (exclusivo para o gerente)
-- Campo para financeiro (exclusivo para o gerente)
+- Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo de vendas
+- Caso o usuário seja um gerente, será redirecionado para o menu, onde aparecerá 4 campos:
+  - Campo para **Vendas**
+  - Campo para **Cadastro de usuários** 
+  - Campo para **Estoque** 
+  - Campo para **Financeiro** 
 
-### História 3 - Campo de vendas
+### História 3 - Aba de pré-vendas
 
-- Como funcionário/gerente quero entrar na aba de vendas para vender/pesquisar um produto
+- Como funcionário/gerente quero acessar na aba de **Vendas** para vender/pesquisar um produto
 
 ### Critério de aceite
 
 - Tela de pré-venda
-- Campo com a lista de produtos escolhidos
+- Campo com a lista de produtos escolhidos, quantidade, preço unitário, sub-total(preço unitário x quantidade)
 - Campo com as formas de pagamento (dinheiro, cartão, pix)
 - Campo para cancelar pré-venda
   - Caso escolha a opção cancelar pré-venda, todos os produtos escolhidos sairão da pré-venda
@@ -160,6 +161,8 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo para categorias de produtos
   - Caso escolha o campo de categorias de produtos, aparecerá 4 campos
     - Campo Alimentícios, Campo medicamentos, Campo brinquedos, Campo acessórios
+- Campo onde mostra qual usuário está conectado
+- Campo com o valor total dos produtos (soma dos sub-totais)
 
 
 
@@ -169,92 +172,126 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### Critério de aceitação 
 
-- Tela de pré-venda (Campo vendas)
+- Tela de pré-venda (Campo **Vendas**)
 - Atalho/Botão para categoria de produto
   - Ao escolher esse campo será redirecionado para as categorias (alimentícios, medicamentos, brinquedos, acessórios)
      - Após escolher uma categoria, aparecerá uma lista com apenas produtos da categoria escolhida
 - Atalho/Botão para pesquisa de um produto 
-  - Ao escolher esse campo, aparecerá uma lista com todos os produtos(com barra de rolagem) e um campo para pesquisar um produto específico
+  - Ao escolher esse campo, aparecerá uma lista com todos os produtos (com barra de rolagem) e um campo para pesquisar um produto específico
 
-### História 5 - Escolhendo o produto
-
-- Como funcionário/gerente quero escolher um produto da loja para encaminhá-lo à pré-venda
-
-### Critério de aceitação
-
-- Tela de pré-venda (Campo vendas)
-- Atalho/Botão para pesquisar um produto
-- Lista com os produtos
- 
-
-
-### História 6 - Vendendo um produto
+### História 5 - Vendendo um produto
 
 - Como funcionário/gerente quero escolher um produto para realizar a venda do mesmo
   
 ### Critério de aceitação
+- Tela de pré-venda
+- Atalho/Botão para pesquisa de mercadorias
 - Campo com a lista de produtos
-  - Após selecionar o produto, escolherá a quantidade que será vendida, após isso, o produto será redirecionado para a pré-venda
+  - Após selecionar o produto, escolherá a quantidade que será vendida, e então o produto será redirecionado para a pré-venda
 - Produtos com quantidades zeradas não serão encaminhados para a pré-venda e aparecerá uma mensagem na tela:
   - ''O produto não pode ser vendido pois não há quantidade no estoque''
 - Campo com a lista de produtos escolhidos , onde é mostrado nome, preço e quantidade
 - Campo com forma de pagamento
+  - Caso seja pix, um QRCODE é gerado para a efetuação do pagamento
 - Não permite vendas com quantidades que ultrapassam o estoque
 - Campo com a confirmação de valor, quantidade e forma de pagamento
 
   
 ## Histórias de usuário Gerente (Exclusivo)
 
-### História 5 - Adicionando um produto
+### História 1 - Cadastrando um usuário
 
-- Como gerente quero adicionar um produto ao sistema
+- Como gerente quero cadastrar um usuário para que um funcionário tenha acesso ao sistema
 
 ### Critério de aceitação
 
-- Campo para pesquisa de produtos
+- Campo **Cadastrar Usuário**
+- Campo com a lista de usuários (nome e função)
+- Campo com um (+) para adicionar usuários
+- Campo onde será adicionado o nome
+  - Os nomes dos usuários não podem ser iguais uns aos outros
+- Campo onde será adicionado o login
+  - O login não deve:
+    - Ter caracteres especiais (`,&,_,),
+    - Ter mais de 10 caracteres
+    - Ter espaço 
+  - O login deve :
+    - Ter pelo menos um número
+    - Ter no mínimo 3 caracteres
+    - Ter uma letra maiúscula
+- Campo onde será adicionado a senha
+  - A senha não deve:
+    - Ser igual ao usuário
+  - A senha deve:
+    - Ter pelo menos 5 caracteres
+    - Ter pelo menos 1 número
+    - Ter pelo menos 1 caractere especial
+    - Ter pelo menos 1 letra maiúscula
+- Campo onde será adicionado a função do usuário
+  - Gerente ou Funcionário
+ 
+### História 2 - Adicionando um produto
+
+- Como gerente quero acessar no campo **Estoque** para adicionar um produto ao sistema
+
+### Critério de aceitação
+
+- Campo **Estoque**
+- Campo com a lista de produtos
 - Campo com um (+) para adicionar produtos
 - Campo onde será inserido o nome
+  - Deve ser igual as notas fiscais
 - Campo onde será inserido o preço
 - Campo onde será inserido a quantidade
+  - Deve ser igual as notas fiscais
 - Campo onde será inserido o NCM
+  - Consultado através do site da Receita Federal ou Cosmos BlueSoft
 - Campo onde será inserido o código de barras
+  - Deve ser igual ao do produto
 - Campo para confirmação de dados
 - Mensagem produto adicionado com sucesso
+  - Caso as informações não se adequarem as regras acima, aparecerá na tela "Informações não condizem com com as regras"
+ 
+### História 3 - Alterando preço de um produto
 
-### História 6 - Alterando preço de um produto
-
-- Como gerente quero alterar o preço de um produto
+- Como gerente quero acessar no campo **Estoque** para alterar o preço de um produto
 
 ### Critério de aceitação
 
-- Campo para pesquisa de produtos
+- Campo **Estoque**
+- Campo com a lista de produtos
 - Campos com as informações do produto
 - Campo com o preço
 - Campo com a confirmação da alteração do produto
 - Mensagem produto alterado com sucesso
 
-### História 7 - Alterando quantidade de um produto
+### História 4 - Alterando quantidade de um produto
 
-- Como gerente quero alterar a quantidade de um produto
+- Como gerente quero acessar no campo **Estoque** para alterar a quantidade de um produto
 
 ### Critério de aceitação
 
-- Campo para pesquisa de produtos
+- Campo **Estoque**
+- Campo com a lista de produtos
 - Campos com as informações do produto
 - Campo com a quantidade
 - Campo com a confirmação da alteração do produto
 - Mensagem produto alterado com sucesso
 
-### História 8 - Excluindo um produto
+### História 5 - Excluindo um produto
 
-- Como gerente quero excluir um produto
+- Como gerente quero acessar no campo **Estoque** para excluir um produto
 
 ### Critério de aceitação
 
-- Campo para pesquisa de produtos
-- Campos com as informações do produto
+- Campo **Estoque**
+- Campo com a lista de produtos
 - Campo com um (x) para excluir um produto
 - Campo com a confirmação da exclusão do produto
 - Mensagem produto excluído com sucesso
+
+### História 6 - Acessando o histórico de vendas
+
+
 
 

@@ -57,7 +57,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 ### 2.7. Itens fora do Escopo
 
 
-# Requisitos Específicos
+# 3. Requisitos Específicos
 
 ### 3.1. Requisitos Funcionais 
 
@@ -121,7 +121,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 # 6. Aprovação
 
-# Histórias de usuário
+# 7. Histórias de usuário
 
 ## Histórias de usuário Funcionário/Gerente
 

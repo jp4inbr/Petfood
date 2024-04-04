@@ -45,7 +45,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 ### 2.5. Atores
 
 - Funcionário (Responsável por consultar produtos e realizar as vendas)
-- Gerente (Responsável por incluir, excluir e alterar os itens e os preços no estoque. Também poderá consultar produtos e realizar vendas)
+- Gerente (Responsável por incluir, excluir e alterar os itens e os preços no estoque, cadastrar usuários e ter controle sobre o financeiro. Também poderá consultar produtos e realizar vendas)
 
 <p align="center">
   <img src="https://i.imgur.com/JlrTSbB_d.webp?maxwidth=760&fidelity=grand" alt="Relação de hierarquia entre gerente e funcionário"></a>
@@ -65,6 +65,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RF02 - O sistema deve permitir a criação, exclusão e alteração dos itens no estoque
 - RF03 - O sistema deve armazenar o histórico de vendas, incluindo o valor total, usuário responsável e a data
 - RF04 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados
+- RF05 - O sistema deve ser capaz de adicionar/excluir usuários
 
 ### 3.2. Requisitos não Funcionais
 
@@ -74,6 +75,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RNF04 - O sistema deverá inicializar em menos de dois minutos. (Desempenho)
 
 ### 3.4. Regras de negocios
+
 - RN01 - Alteração dos produtos (Somente será permitida alterações se o usuário logado for um gerente).
 - RN02 - Movimentação de estoque (Só poderá ser feito a venda de um item se houver uma quantidade equivalente no estoque).
 - RN03 - Cadastro de usuários (Será permitido cadastro de usuário somente se o usuário logado for um gerente).
@@ -81,15 +83,18 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 
 ### 3.4. Restrições de Hardware
+
 - Mínimo de 8GB de memória RAM.
 - Necessário um SSD para a locação/armazenamento do sistema e base de dados.
 
 
 ### 3.5. Restrições de Software
+
 - Será permitida a utilização somente no sistema Windows.
 
 
 ### 3.6. Restrições de Ambiente
+
 - O acesso ao sistema será apenas em ambiente local.
 
 ### 3.7. Lista de riscos 
@@ -162,6 +167,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - Caso escolha o campo de categorias de produtos, aparecerá 4 campos
     - Campo Alimentícios, Campo medicamentos, Campo brinquedos, Campo acessórios
 - Campo onde mostra qual usuário está conectado
+- Campo para deslogar da conta 
 - Campo com o valor total dos produtos (soma dos sub-totais)
 
 
@@ -207,6 +213,9 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 - Campo **Cadastrar Usuário**
 - Campo com a lista de usuários (nome e função)
+- Campo com um (x) para excluir um usuário
+- Campo para confirmar a exclusão de usuário
+  - Mensagem usuário excluído com sucesso
 - Campo com um (+) para adicionar usuários
 - Campo onde será adicionado o nome
   - Os nomes dos usuários não podem ser iguais uns aos outros
@@ -275,6 +284,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a lista de produtos
 - Campos com as informações do produto
 - Campo com a quantidade
+  - A quantidade deve ser igual à nota fiscal
 - Campo com a confirmação da alteração do produto
 - Mensagem produto alterado com sucesso
 
@@ -291,6 +301,16 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Mensagem produto excluído com sucesso
 
 ### História 6 - Acessando o histórico de vendas
+
+- Como gerente quero acessar a aba **Financeiro** para ver o histórico de vendas
+
+### Critério de aceitação
+
+- Aba **Financeiro**
+- Campo com o histórico de vendas
+  - Número da venda, data, valor, número de itens, nome do usuário, classe do usuário
+- Soma total das vendas do mês
+- Soma total das vendas do ano
 
 
 

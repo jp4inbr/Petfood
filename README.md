@@ -123,7 +123,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 # 7. Histórias de usuário
 
-## Histórias de usuário Funcionário/Gerente
+## 7.1. Histórias de usuário Funcionário/Gerente
 
 ### História 1 - Entrando no sistema
 
@@ -203,7 +203,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação de valor, quantidade e forma de pagamento
 
   
-## Histórias de usuário Gerente (Exclusivo)
+## 7.2. Histórias de usuário Gerente (Exclusivo)
 
 ### História 1 - Cadastrando um usuário
 
@@ -311,6 +311,32 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - Número da venda, data, valor, número de itens, nome do usuário, classe do usuário
 - Soma total das vendas do mês
 - Soma total das vendas do ano
+
+# 8. Mapa de Histórias de Usuário 
+
+### Vendas
+
+- 7.1/ História 3
+- 7.1/ História 4
+- 7.1/ História 5
+
+### Controle de produtos
+
+- 7.2/ História 2
+- 7.2/ História 3
+- 7.2/ História 4
+- 7.2/ História 5
+
+### Controle de usuarios
+
+- 7.2/ História 1
+
+### Funcionalidades do sistema
+
+- 7.1/ História 1 
+- 7.1/ História 2
+- 7.2/ História 6
+  
 
 
 

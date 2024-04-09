@@ -223,11 +223,10 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - O login não deve:
     - Ter caracteres especiais (`,&,_,),
     - Ter mais de 10 caracteres
-    - Ter espaço 
+    - Ter espaço
+    - Ter números
   - O login deve :
-    - Ter pelo menos um número
     - Ter no mínimo 3 caracteres
-    - Ter uma letra maiúscula
 - Campo onde será adicionado a senha
   - A senha não deve:
     - Ser igual ao usuário

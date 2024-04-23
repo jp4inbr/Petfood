@@ -315,26 +315,26 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### Vendas
 
-- 7.1/ História 3
-- 7.1/ História 4
-- 7.1/ História 5
+- 7.1/ História 3 - Aba de pré-vendas
+- 7.1/ História 4 - Consultando produtos
+- 7.1/ História 5 - Vendendo um produto
 
 ### Controle de produtos
 
-- 7.2/ História 2
-- 7.2/ História 3
-- 7.2/ História 4
-- 7.2/ História 5
+- 7.2/ História 2 - Adicionando um produto
+- 7.2/ História 3 - Alterando preço de um produto
+- 7.2/ História 4 - Alterando quantidade de um produto
+- 7.2/ História 5 - Excluindo um produto
 
 ### Controle de usuarios
 
-- 7.2/ História 1
+- 7.2/ História 1 - Cadastrando um usuário
 
 ### Funcionalidades do sistema
 
-- 7.1/ História 1 
-- 7.1/ História 2
-- 7.2/ História 6
+- 7.1/ História 1 - Entrando no sistema
+- 7.1/ História 2 - Menu do sistema
+- 7.2/ História 6 - Acessando o histórico de vendas
   
 
 

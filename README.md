@@ -1,5 +1,5 @@
 <p align="center">
- <img src="blob:https://web.whatsapp.com/c4b8567b-85ce-4670-8710-c284740e219c"></a>
+ <img src="c4b8567b-85ce-4670-8710-c284740e219c.jfif" al="Logo"></a>
 </p>
 
 # 1. Introdução

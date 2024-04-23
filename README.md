@@ -1,3 +1,7 @@
+<p align="center">
+ <img src="blob:https://web.whatsapp.com/c4b8567b-85ce-4670-8710-c284740e219c"></a>
+</p>
+
 # 1. Introdução
 
 ### 1.1. Propósito

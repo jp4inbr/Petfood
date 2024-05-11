@@ -22,7 +22,6 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Falha de registro de produtos;
 - Falha no cadastro de usuário;
 - Impossibilidade de mudar o preço;
-- Falta de suporte aos usuários;
 - Falha no histórico de vendas;
 
 ### 2.2. Objetivos do Produto
@@ -45,7 +44,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 ### 2.5. Atores
 
 - Funcionário (Responsável por consultar produtos e realizar as vendas)
-- Gerente (Responsável por incluir, excluir e alterar os itens e os preços no estoque, cadastrar usuários e ter controle sobre o financeiro. Também poderá consultar produtos e realizar vendas)
+- Gerente (Responsável por incluir, excluir e alterar os produtos e os preços no estoque, cadastrar usuários e ter controle sobre o financeiro. Também poderá consultar produtos e realizar vendas)
 
 <p align="center">
   <img src="https://i.imgur.com/JlrTSbB_d.webp?maxwidth=760&fidelity=grand" alt="Relação de hierarquia entre gerente e funcionário"></a>
@@ -73,6 +72,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RNF02 - O sistema será de linguagem simples e acessível. (Usabilidade)
 - RNF03 - Somente usuários cadastrados terão acesso. (Segurança)
 - RNF04 - O sistema deverá inicializar em menos de dois minutos. (Desempenho)
+- RNF05 - O sistema estará disponível 24/7
 
 ### 3.4. Regras de negocios
 
@@ -133,7 +133,6 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 - Campo para colocar o usuário
 - Campo para colocar a senha
-- Campo esqueci a senha
 
 ### História 2 - Menu do sistema
 

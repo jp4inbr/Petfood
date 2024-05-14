@@ -61,7 +61,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 ### 3.1. Requisitos Funcionais 
 
 - RF01 - O sistema deverá solicitar ao usuário seu login e senha e verificar se o mesmo possui permissão de acesso ao sistema.
-- RF02 - O sistema encaminhará o usuário à tela de pré-vendas automaticamente após o login (Caso o usuário logado for um funcionário). 
+- RF02 - O sistema encaminhará o usuário à tela de Vendas automaticamente após o login (Caso o usuário logado for um funcionário). 
 - RF03 - O sistema deve permitir a criação, exclusão e alteração dos itens no estoque.
 - RF04 - O sistema deve armazenar o histórico de vendas, incluindo o valor total, usuário responsável e a data.
 - RF05 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados.

@@ -211,7 +211,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
     - Ter espaço.
     - Ter números.
   - O login deve :
-    - Ter no mínimo 3 caracteres.
+    - Ter no minimo 3 caracteres
 - Campo onde será adicionado a senha.
   - A senha não deve:
     - Ser igual ao usuário.

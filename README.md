@@ -219,7 +219,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
     - Ter pelo menos 5 caracteres.
     - Ter pelo menos 1 número.
     - Ter pelo menos 1 caractere especial.
-    - Ter pelo menos 1 letra maiúscula.
+    - Ter pelo menos 1 letra maiuscula.
 - Campo onde será adicionado a data de nascimento.
 - Campo onde será adicionado o cpf.
 - Campo onde será adicionado o valor do vale transporte.

@@ -1,3 +1,10 @@
+
+<p align="center">
+  <img src="https://i.imgur.com/rqILBWA_d.webp?maxwidth=760&fidelity=grand" alt="Logo Petfood"></a>
+</p>
+
+
+
 # 1. Introdução
 
 ### 1.1. Propósito

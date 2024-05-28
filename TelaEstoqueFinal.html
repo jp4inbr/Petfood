@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estoque PetFood</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000000; /* Preto */
+        color: #FFFFFF; /* Branco */
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #FFFFFF; /* Branco */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #ffbf00; /* Amarelo */
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ffbf00; /* Amarelo */
+    }
+    th {
+        background-color: #ffbf00; /* Amarelo */
+        color: #000000; /* Preto */
+        text-transform: uppercase;
+    }
+    input[type="text"] {
+        padding: 8px 30px 8px 10px;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #FFFFFF; /* Branco */
+        color: #000000; /* Preto */
+    }
+    .search-icon {
+        position: relative;
+        left: -33px;
+        top: 2px;
+        color: #666;
+    }
+    .btn {
+        background-color: #ffbf00; /* Amarelo */
+        color: #000000; /* Preto */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: block;
+        margin: 20px auto;
+    }
+    .btn:hover {
+        background-color: #ffd966; /* Amarelo mais claro */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Estoque PetFood</h1>
+    <div>
+        <input type="text" placeholder="Pesquisar...">
+        <i class="fas fa-search search-icon"></i>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Preço de Custo</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Itens fictícios -->
+            <tr>
+                <td>001</td>
+                <td>Ração para Cães</td>
+                <td>R$ 40,00</td>
+                <td>R$ 25,00</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Ração para Gatos</td>
+                <td>R$ 35,00</td>
+                <td>R$ 20,00</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Bolinha de Tênis para Cachorros</td>
+                <td>R$ 5,00</td>
+                <td>R$ 3,00</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn">Cadastrar Novo Produto</button>
+</div>
+</body>
+</html>

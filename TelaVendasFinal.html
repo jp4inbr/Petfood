@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venda PetFood</title>
+<style>
+    body {
+        background-color: #000000; /* Preto */
+        color: #FFFFFF; /* Branco */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #ffbf00; /* Amarelo */
+        text-align: center;
+    }
+
+    .user-info {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar input[type="text"] {
+        padding: 8px;
+        width: calc(100% - 40px);
+        border: none;
+        border-radius: 5px 0 0 5px;
+        background-color: #FFFFFF; /* Branco */
+        color: #000000; /* Preto */
+    }
+
+    .search-bar button {
+        padding: 8px 15px;
+        background-color: #ffbf00; /* Amarelo */
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        color: #000000; /* Preto */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ffbf00; /* Amarelo */
+        text-align: left;
+    }
+
+    th {
+        background-color: #ffbf00; /* Amarelo */
+        color: #000000; /* Preto */
+        text-transform: uppercase;
+    }
+
+    .payment-options {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .payment-options select {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #FFFFFF; /* Branco */
+        color: #000000; /* Preto */
+    }
+
+    .apply-discount {
+        padding: 8px 15px;
+        background-color: #ffbf00; /* Amarelo */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000000; /* Preto */
+        margin-right: 10px;
+    }
+
+    .finish-sale {
+        padding: 10px 20px;
+        background-color: #ffbf00; /* Amarelo */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000000; /* Preto */
+        display: block;
+        margin: 20px auto;
+        text-transform: uppercase;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Venda PetFood</h1>
+    <div class="user-info">
+        <span>Usuário: Arthur Lima</span>
+        <a href="#">Logoff</a>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Valor Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas de produtos -->
+            <tr>
+                <td>Ração para Cães</td>
+                <td>2</td>
+                <td>$20</td>
+                <td>$40</td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+
+    <div class="payment-options">
+        <select name="payment-method" id="payment-method">
+            <option value="cash">Dinheiro</option>
+            <option value="card">Cartão</option>
+            <option value="pix">PIX</option>
+        </select>
+        <button class="apply-discount">Aplicar Desconto</button>
+    </div>
+
+    <button class="finish-sale">Finalizar Venda</button>
+</div>
+</body>
+</html>

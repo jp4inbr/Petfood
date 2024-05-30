@@ -296,30 +296,37 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - Será informado qual o vendedor, a data e o total da venda 
 
 # 8. Mapa de Histórias de Usuário 
-
-### Vendas
-
-- 7.1/ História 3 - Aba de Vendas
-- 7.1/ História 4 - Vendendo um produto
-
-### Controle de produtos
-
-- 7.2/ História 2 - Adicionando um produto
-- 7.2/ História 3 - Alterando preço de um produto
-- 7.2/ História 4 - Alterando quantidade de um produto
-- 7.2/ História 5 - Excluindo um produto
-
-### Controle de usuarios
-
-- 7.2/ História 1 - Cadastrando um usuário
-
-### Funcionalidades do sistema
-
-- 7.1/ História 1 - Entrando no sistema
-- 7.1/ História 2 - Menu do sistema
-- 7.2/ História 6 - Acessando o histórico de vendas
-  
-
-
-
+ 
+<table>
+<tr>
+<td>Vendas</td>
+<td>Controle de produtos</td>
+<td>Controle de usuarios</td>
+<td>Funcionalidades do sistema</td>
+</tr>
+<tr>
+<td>7.1/ História 3 Aba de Vendas</td>
+<td>7.2/ História 2 Adicionando um produto</td>
+<td>7.2/ História 1 Cadastrando um usuário</td>
+<td>7.1/ História 1 Entrando no sistema</td>
+</tr>
+<tr>
+<td>7.1/ História 4 Vendendo um produto</td>
+<td>7.2/ História 3 Alterando preço de um produto</td>
+<td></td>
+<td>7.1/ História 2 Menu do sistema</td>
+</tr>
+<tr>
+<td></td>
+<td>7.2/ História 4 Alterando quantidade de um produto</td>
+<td></td>
+<td>7.2/ História 6 Acessando o histórico de vendas</td>
+</tr>
+<tr>
+<td></td>
+<td>7.2/ História 5 Excluindo um produto</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 

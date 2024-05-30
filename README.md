@@ -133,7 +133,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ## 7.1. Histórias de usuário Funcionário/Gerente
 
-### História 1 - Entrando no sistema
+### História 1 - Entrando no sistema (Complexidade 3:Implementar o formulário de login e a autenticação | Tempo: 1.5 dias)
 
 - Como funcionário/gerente quero colocar as minhas informações (login, senha) para acessar o sistema.
 
@@ -142,7 +142,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo para colocar o usuário.
 - Campo para colocar a senha.
 
-### História 2 - Menu do sistema
+### História 2 - Menu do sistema (Complexidade 5 Autenticação e redirecionamento condicional, criação do menu dinâmico | Tempo: 2.5 dias)
 
 - Como funcionário/gerente , após o login , observo o menu do sistema , para que possa prosseguir a uma funcionalidade do sistema.
 
@@ -155,7 +155,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - Campo para **Estoque** .
   - Campo para **Financeiro** .
 
-### História 3 - Aba de Vendas
+### História 3 - Aba de Vendas (Complexidade 8 Interface com múltiplos campos, lógica de vendas, cancelamento, pesquisa | Tempo: 4 dias)
 
 - Como funcionário/gerente quero acessar a aba de **Vendas** para vender/pesquisar um produto.
 
@@ -175,7 +175,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com o valor total dos produtos (soma dos valores totais).
 - Campo Finalizar compra.
 
-### História 4 - Vendendo um produto
+### História 4 - Vendendo um produto (Complexidade 8 Lógica de busca e validação, integração com formas de pagamento | Tempo: 4 dias)
 
 - Como funcionário/gerente quero escolher um produto para realizar a venda do mesmo.
   
@@ -195,7 +195,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   
 ## 7.2. Histórias de usuário Gerente (Exclusivo)
 
-### História 1 - Cadastrando um usuário
+### História 1 - Cadastrando um usuário (Complexidade 5 Formulário complexo com validações | Tempo: 2.5 dias)
 
 - Como gerente quero cadastrar um usuário para que um funcionário tenha acesso ao sistema.
 
@@ -226,7 +226,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo onde será adicionado o valor do vale alimentação.
 - Campo onde será adicionado o horário de trabalho. 
  
-### História 2 - Adicionando um produto
+### História 2 - Adicionando um produto (Complexidade 3 Formulário de cadastro de produto | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para adicionar um produto ao sistema.
 
@@ -244,7 +244,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
     - Mensagem produto adicionado com sucesso.
   
  
-### História 3 - Alterando preço de um produto
+### História 3 - Alterando preço de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para alterar o preço de um produto.
 
@@ -257,7 +257,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da alteração do produto.
 - Mensagem produto alterado com sucesso.
 
-### História 4 - Alterando quantidade de um produto
+### História 4 - Alterando quantidade de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para alterar a quantidade de um produto.
 
@@ -270,7 +270,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da alteração do produto.
 - Mensagem produto alterado com sucesso.
 
-### História 5 - Excluindo um produto
+### História 5 - Excluindo um produto (Complexidade 3 Formulário de exclusão | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para excluir um produto.
 
@@ -282,7 +282,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da exclusão do produto.
 - Mensagem produto excluído com sucesso.
 
-### História 6 - Acessando o histórico de vendas
+### História 6 - Acessando o histórico de vendas (Complexidade 5 Visualização de dados financeiros, filtragem e agregação | Tempo: 2.5 dias)
 
 - Como gerente quero acessar a aba **Financeiro** para ver o histórico de vendas
 

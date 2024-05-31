@@ -5,22 +5,22 @@
 
 
 
-# 1. Introdução
+# |1. Introdução
 
-### 1.1. Propósito
+### |1.1. Propósito
 - Fornecer um software que gerencia uma casa de ração, onde realizará serviços para o usuário durante seu horário de trabalho.
 Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de emitir um relatório geral de vendas.Também será capaz de efetuar cadastro e controle de usuários.
 
-### 1.2. Público Alvo
+### |1.2. Público Alvo
 - Usuários internos da empresa PetFood.
 
-### 1.3. Definições, Acrônimos e Abreviações 
+### |1.3. Definições, Acrônimos e Abreviações 
 - 
 
 
-# 2. Descrição Geral do Produto
+# |2. Descrição Geral do Produto
 
-### 2.1. Situação Atual
+### |2.1. Situação Atual
 
  A empresa PetFood já possui um sistema de vendas no local, que atualmente apresenta os seguintes problemas: 
 
@@ -31,12 +31,12 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Impossibilidade de mudar o preço;
 - Falha no histórico de vendas;
 
-### 2.2. Objetivos do Produto
+### |2.2. Objetivos do Produto
 
 - A empresa PetFood solicitou o desenvolvimento de um novo software para fazer um gerenciamento total da empresa, desde o começo, meio e o fim do processo de venda. Além disso, o produto deverá solucionar os problemas apresentados no sistema anterior.
 - O software tratará das pendências de logística, a fim de organizar todos os processos relacionados às vendas e o bom funcionamento da empresa.
 
-### 2.3. Benefícios do Projeto
+### |2.3. Benefícios do Projeto
 
 - Inicialização rápida;
 - Facilidade no processo de vendas;
@@ -46,9 +46,56 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Controle de vendas individuais de cada usuário;
 - Manutenção mais acessível e ágil;
  
-### 2.4. Escopo
+### |2.4. Escopo
 
-### 2.5. Atores
+- Esse projeto trata-se da criação de um software de vendas para uma casa de ração, o escopo do futuro Sistema PetFood envolve as seguintes macro-funcionalidades:
+<table>
+  
+<tr>
+<td>N°</td>
+<td>Módulo</td>
+<td>Descrição</td>
+</tr>
+  
+<tr>
+<td>1°</td>
+<td>Login de usuário</td>
+<td>O sistema permitirá o acesso apos o login de usuário</td>
+</tr>
+
+<tr>
+<td>2°</td>
+<td>Pesquisa de produtos</td>
+<td>Permite que o usuário possa localizar um produto atrvés de um barra de pesquisa</td>
+</tr>
+
+<tr>
+<td>3°</td>
+<td>Venda de produtos</td>
+<td>Efetua a compra de um ou vários produtos, disponibilizando ferramentas para alterar quantidade, forma de pagamento, etc</td>
+</tr>
+
+<tr>
+<td>4°</td>
+<td>Cadastro de usuário</td>
+<td>O sistema permitirá que o gerente cadastre novos usuários e suas informações no sistema, fazendo com que ele tenha acesso </td>
+</tr>
+
+<tr>
+<td>5°</td>
+<td>Cadastro de produtos</td>
+<td>O sistema permitirá que o gerente cadastre novos produtos e suas informações no sistema, fzendo com que ele entre na lista do estoque</td>
+</tr>
+
+<tr>
+<td>6°</td>
+<td>Histórico de vendas</td>
+<td>O sistema emitirá um histórico de vendas diárias e de datas anteriores</td>
+</tr>
+
+</table>
+
+### |2.5. Atores
 
 - Funcionário (Responsável por consultar produtos e realizar as vendas)
 - Gerente (Responsável por incluir, excluir e alterar os produtos e os preços no estoque, cadastrar usuários e ter controle sobre o financeiro. Também poderá consultar produtos e realizar vendas)
@@ -58,14 +105,14 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 </p>
 
 
-### 2.6. Premissas
+### |2.6. Premissas
 
-### 2.7. Itens fora do Escopo
+### |2.7. Itens fora do Escopo
 
 
-# 3. Requisitos Específicos
+# |3. Requisitos Específicos
 
-### 3.1. Requisitos Funcionais 
+### |3.1. Requisitos Funcionais 
 
 - RF01 - O sistema deverá solicitar ao usuário seu login e senha e verificar se o mesmo possui permissão de acesso ao sistema.
 - RF02 - O sistema encaminhará o usuário à tela de Vendas automaticamente após o login (Caso o usuário logado for um funcionário). 
@@ -74,7 +121,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RF05 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados.
 - RF06 - O sistema deve permitir a criação, exclusão e alteração dos usuários.
 
-### 3.2. Requisitos não Funcionais
+### |3.2. Requisitos não Funcionais
 
 - RNF01 - O sistema rodará no Windows. (Operacional)
 - RNF02 - O sistema será de linguagem simples e acessível. (Usabilidade)
@@ -82,7 +129,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RNF04 - O sistema deverá inicializar em menos de dois minutos. (Desempenho)
 - RNF05 - O sistema estará disponível de acordo com o horário de funcionamento do estabelecimento.
 
-### 3.4. Regras de negocios
+### |3.4. Regras de negocios
 
 - RN01 - Alteração dos produtos (Alterações serão permitidas somente se o usuário logado for um gerente).
 - RN02 - Movimentação de estoque (Só poderá ser feito a venda de um item se houver uma quantidade equivalente no estoque).
@@ -90,63 +137,64 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RN04 - Acesso as funcionalidades do sistema(Será permitido acesso as funcionalidades do sistema caso o usuário for um gerente).
 - RN05 - Consulta do relatório geral de vendas (Será permitido consultas ao relatório geral de vendas somente se o usuário logado for um gerente).
 
-### 3.4. Restrições de Hardware
+### |3.4. Restrições de Hardware
 
 - Mínimo de 8GB de memória RAM.
 - Necessário um SSD para a locação/armazenamento do sistema e base de dados.
 
 
-### 3.5. Restrições de Software
+### |3.5. Restrições de Software
 
 - Será permitida a utilização somente no sistema Windows.
 
 
-### 3.6. Restrições de Ambiente
+### |3.6. Restrições de Ambiente
 
 - O acesso ao sistema será apenas em ambiente local do estabelecimento.
 
-### 3.7. Lista de riscos 
+### |3.7. Lista de riscos 
 
 
-# 4. Diagramas UML
 
-### 4.1. Identificação dos Casos de Uso
+# |4. Diagramas UML
 
-### 4.2. Diagramas de Casos de Uso
+### |4.1. Identificação dos Casos de Uso
 
-### 4.3. Diagrama de Atividades
+### |4.2. Diagramas de Casos de Uso
 
-### 4.4. Diagrama de Classes
+### |4.3. Diagrama de Atividades
 
-### 4.5. Diagrama de Objetos
+### |4.4. Diagrama de Classes
 
-### 4.6. Diagrama de Sequência 
+### |4.5. Diagrama de Objetos
 
-### 4.7. Diagrama de Estados
+### |4.6. Diagrama de Sequência 
+
+### |4.7. Diagrama de Estados
 
 
-# 5. Apêndice
+# |5. Apêndice
 
-# 6. Aprovação
+# |6. Aprovação
 
-# 7. Histórias de usuário
+# |7. Histórias de usuário
 
-## 7.1. Histórias de usuário Funcionário/Gerente
+## |7.1. Histórias de usuário Funcionário/Gerente
 
-### História 1 - Entrando no sistema (Complexidade 3:Implementar o formulário de login e a autenticação | Tempo: 1.5 dias)
+### |História 1 - Entrando no sistema (Complexidade 3:Implementar o formulário de login e a autenticação | Tempo: 1.5 dias)
 
 - Como funcionário/gerente quero colocar as minhas informações (login, senha) para acessar o sistema.
 
-### Critério de aceitação 
+### |Critério de aceitação 
 
 - Campo para colocar o usuário.
 - Campo para colocar a senha.
 
-### História 2 - Menu do sistema (Complexidade 5 Autenticação e redirecionamento condicional, criação do menu dinâmico | Tempo: 2.5 dias)
+### |História 2 - Menu do sistema (Complexidade 5 Autenticação e redirecionamento condicional, criação do menu dinâmico | Tempo: 2.5 dias)
 
 - Como funcionário/gerente , após o login , observo o menu do sistema , para que possa prosseguir a uma funcionalidade do sistema.
 
-### Critério de aceite
+### |Critério de aceite
 
 - Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo de vendas.
 - Caso o usuário seja um gerente, será redirecionado para o menu, onde aparecerá 4 campos:
@@ -155,11 +203,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
   - Campo para **Estoque** .
   - Campo para **Financeiro** .
 
-### História 3 - Aba de Vendas (Complexidade 8 Interface com múltiplos campos, lógica de vendas, cancelamento, pesquisa | Tempo: 4 dias)
+### |História 3 - Aba de Vendas (Complexidade 8 Interface com múltiplos campos, lógica de vendas, cancelamento, pesquisa | Tempo: 4 dias)
 
 - Como funcionário/gerente quero acessar a aba de **Vendas** para vender/pesquisar um produto.
 
-### Critério de aceite
+### |Critério de aceite
 
 - Tela de Vendas.
 - Campo com a lista de produtos escolhidos, quantidade, valor unitário, valor total (vlor unitário x quantidade) e código.
@@ -175,11 +223,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com o valor total dos produtos (soma dos valores totais).
 - Campo Finalizar compra.
 
-### História 4 - Vendendo um produto (Complexidade 8 Lógica de busca e validação, integração com formas de pagamento | Tempo: 4 dias)
+### |História 4 - Vendendo um produto (Complexidade 8 Lógica de busca e validação, integração com formas de pagamento | Tempo: 4 dias)
 
 - Como funcionário/gerente quero escolher um produto para realizar a venda do mesmo.
   
-### Critério de aceitação
+### |Critério de aceitação
 - Tela de vendas.
 - Campo para pesquisa de produtos.
 - Campo com a lista de produtos.
@@ -193,13 +241,13 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação de valor, quantidade e forma de pagamento.
 
   
-## 7.2. Histórias de usuário Gerente (Exclusivo)
+## |7.2. Histórias de usuário Gerente (Exclusivo)
 
-### História 1 - Cadastrando um usuário (Complexidade 5 Formulário complexo com validações | Tempo: 2.5 dias)
+### |História 1 - Cadastrando um usuário (Complexidade 5 Formulário complexo com validações | Tempo: 2.5 dias)
 
 - Como gerente quero cadastrar um usuário para que um funcionário tenha acesso ao sistema.
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Campo **Cadastrar Usuário**.
 - Campo onde será adicionado o nome completo.
@@ -226,11 +274,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo onde será adicionado o valor do vale alimentação.
 - Campo onde será adicionado o horário de trabalho. 
  
-### História 2 - Adicionando um produto (Complexidade 3 Formulário de cadastro de produto | Tempo: 1.5 dias)
+### |História 2 - Adicionando um produto (Complexidade 3 Formulário de cadastro de produto | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para adicionar um produto ao sistema.
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Campo **Estoque**.
 - Campo com a lista de produtos (Exibindo nome, preço, quantidade, preço de custo.
@@ -244,11 +292,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
     - Mensagem produto adicionado com sucesso.
   
  
-### História 3 - Alterando preço de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
+### |História 3 - Alterando preço de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para alterar o preço de um produto.
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Campo **Estoque**.
 - Campo com a lista de produtos.
@@ -257,11 +305,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da alteração do produto.
 - Mensagem produto alterado com sucesso.
 
-### História 4 - Alterando quantidade de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
+### |História 4 - Alterando quantidade de um produto (Complexidade 3 Formulário de atualização | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para alterar a quantidade de um produto.
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Campo **Estoque**.
 - Campo com a lista de produtos.
@@ -270,11 +318,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da alteração do produto.
 - Mensagem produto alterado com sucesso.
 
-### História 5 - Excluindo um produto (Complexidade 3 Formulário de exclusão | Tempo: 1.5 dias)
+### |História 5 - Excluindo um produto (Complexidade 3 Formulário de exclusão | Tempo: 1.5 dias)
 
 - Como gerente quero acessar o campo **Estoque** para excluir um produto.
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Campo **Estoque**.
 - Campo com a lista de produtos.
@@ -282,11 +330,11 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo com a confirmação da exclusão do produto.
 - Mensagem produto excluído com sucesso.
 
-### História 6 - Acessando o histórico de vendas (Complexidade 5 Visualização de dados financeiros, filtragem e agregação | Tempo: 2.5 dias)
+### |História 6 - Acessando o histórico de vendas (Complexidade 5 Visualização de dados financeiros, filtragem e agregação | Tempo: 2.5 dias)
 
 - Como gerente quero acessar a aba **Financeiro** para ver o histórico de vendas
 
-### Critério de aceitação
+### |Critério de aceitação
 
 - Aba **Financeiro**
 - Campo Venda do dia totais
@@ -295,7 +343,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Campo Histórico de vendas por vendedor
   - Será informado qual o vendedor, a data e o total da venda 
 
-# 8. Mapa de Histórias de Usuário 
+# |8. Mapa de Histórias de Usuário 
  
 <table>
 <tr>

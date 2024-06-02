@@ -60,13 +60,13 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 <tr>
 <td>1°</td>
 <td>Login de usuário</td>
-<td>O sistema permitirá o acesso apos o login de usuário</td>
+<td>O sistema permitirá o acesso após o login de usuário</td>
 </tr>
 
 <tr>
 <td>2°</td>
 <td>Pesquisa de produtos</td>
-<td>Permite que o usuário possa localizar um produto atrvés de um barra de pesquisa</td>
+<td>Permite que o usuário possa localizar um produto através de um barra de pesquisa</td>
 </tr>
 
 <tr>
@@ -84,7 +84,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 <tr>
 <td>5°</td>
 <td>Cadastro de produtos</td>
-<td>O sistema permitirá que o gerente cadastre novos produtos e suas informações no sistema, fzendo com que ele entre na lista do estoque</td>
+<td>O sistema permitirá que o gerente cadastre novos produtos e suas informações no sistema, fazendo com que ele entre na lista do estoque</td>
 </tr>
 
 <tr>

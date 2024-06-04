@@ -1,4 +1,4 @@
-![image](https://github.com/jp4inbr/Petfood/assets/161530938/0447b700-d45e-45f2-8d3a-6c593783ea6e)
+
 <p align="center">
   <img src="https://i.imgur.com/rqILBWA_d.webp?maxwidth=760&fidelity=grand" alt="Logo Petfood"></a>
 </p>

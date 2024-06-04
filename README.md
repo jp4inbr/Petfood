@@ -231,16 +231,6 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 <td>Surgimento de imprevistos com recurso</td>
 </tr>
 
-<tr>
-<td>02°</td>
-<td>Falta de adaptação dos funcionários</td>
-</tr>
-
-<tr>
-<td>03°</td>
-<td>Problemas caso haja erros no cadastro de usuário e produtos </td>
-</tr>
-
 </table>
 
 # |4. Diagramas UML

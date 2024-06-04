@@ -168,7 +168,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 <tr>
 <td>03°</td>
 <td>Desempenho</td>
-<td>O sistema rodará tranquilamente no computador, caso os requisitos sejam satisfeitos</td>
+<td>O sistema rodará tranquilamente no computador, caso os requisitos estejam satisfeitos</td>
 </tr>
 
 </table>

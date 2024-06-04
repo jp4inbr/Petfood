@@ -1,4 +1,4 @@
-
+![image](https://github.com/jp4inbr/Petfood/assets/161530938/0447b700-d45e-45f2-8d3a-6c593783ea6e)
 <p align="center">
   <img src="https://i.imgur.com/rqILBWA_d.webp?maxwidth=760&fidelity=grand" alt="Logo Petfood"></a>
 </p>
@@ -15,7 +15,45 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - Usuários internos da empresa PetFood.
 
 ### |1.3. Definições, Acrônimos e Abreviações 
-- 
+
+<table>
+<tr>
+<td>N°</td>
+<td>Nome</td>
+<td>Descrição</td>
+</tr>
+
+<tr>
+<td>01°</td>
+<td>Login</td>
+<td>Método de acesso ao sistema com informações do usuário</td>
+</tr>
+
+<tr>
+<td>02°</td>
+<td>Vendas(Pré-venda)</td>
+<td>Tela onde será efetuada as vendas do estbelecimento</td>
+</tr>
+
+<tr>
+<td>03°</td>
+<td>Cadastro de Usuários</td>
+<td>Tela onde será efetuado os cadastros dos usuários do estabelecimento</td>
+</tr>
+
+<tr>
+<td>04°</td>
+<td>Estoque</td>
+<td>Tela onde será exibido todos os produtos do estabelecimento</td>
+</tr>
+
+<tr>
+<td>05°</td>
+<td>Financeiro</td>
+<td>Tela onde será exibido o histórico de vendas (diárias e totais)</td>
+</tr>
+
+</table>
 
 
 # |2. Descrição Geral do Produto
@@ -58,37 +96,37 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 </tr>
   
 <tr>
-<td>1°</td>
+<td>01°</td>
 <td>Login de usuário</td>
 <td>O sistema permitirá o acesso após o login de usuário</td>
 </tr>
 
 <tr>
-<td>2°</td>
+<td>02°</td>
 <td>Pesquisa de produtos</td>
 <td>Permite que o usuário possa localizar um produto através de um barra de pesquisa</td>
 </tr>
 
 <tr>
-<td>3°</td>
+<td>03°</td>
 <td>Venda de produtos</td>
 <td>Efetua a compra de um ou vários produtos, disponibilizando ferramentas para alterar quantidade, forma de pagamento, etc</td>
 </tr>
 
 <tr>
-<td>4°</td>
+<td>04°</td>
 <td>Cadastro de usuário</td>
 <td>O sistema permitirá que o gerente cadastre novos usuários e suas informações no sistema, fazendo com que ele tenha acesso </td>
 </tr>
 
 <tr>
-<td>5°</td>
+<td>05°</td>
 <td>Cadastro de produtos</td>
 <td>O sistema permitirá que o gerente cadastre novos produtos e suas informações no sistema, fazendo com que ele entre na lista do estoque</td>
 </tr>
 
 <tr>
-<td>6°</td>
+<td>06°</td>
 <td>Histórico de vendas</td>
 <td>O sistema emitirá um histórico de vendas diárias e de datas anteriores</td>
 </tr>
@@ -107,8 +145,9 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |2.6. Premissas
 
-### |2.7. Itens fora do Escopo
+- 
 
+### |2.7. Itens fora do Escopo
 
 # |3. Requisitos Específicos
 
@@ -158,19 +197,9 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 # |4. Diagramas UML
 
-### |4.1. Identificação dos Casos de Uso
+### |4.1. Diagrama de Classes
 
-### |4.2. Diagramas de Casos de Uso
-
-### |4.3. Diagrama de Atividades
-
-### |4.4. Diagrama de Classes
-
-### |4.5. Diagrama de Objetos
-
-### |4.6. Diagrama de Sequência 
-
-### |4.7. Diagrama de Estados
+### |4.2. Diagrama de Objetos
 
 
 # |5. Apêndice

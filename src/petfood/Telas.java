@@ -16,10 +16,9 @@ public class Telas {
     double y=0;                                                                                 //Contador do valor total da compra
     int c,x;
     String n, d;
-    double p, pc;
-    boolean r=true;    
+    double p, pc;   
         
-    public void gerente(String login){                                                          //Tela principal gerente
+    public void gerente(String login, boolean r){                                                          //Tela principal gerente
 
         System.out.println("Bem vindo: "+login);
         do{                                                                                 
@@ -57,7 +56,7 @@ public class Telas {
                                 
                 case 2: {                                                                     //Ir para tela de vendas
 
-                    this.venda(login);
+                    this.venda(login, r);
                     break;
                 }               
                 
@@ -175,6 +174,7 @@ public class Telas {
                     
                     System.out.println("Logout efetuado");
                     r=false;
+                    break;
                 }
                 
                 default:
@@ -185,7 +185,7 @@ public class Telas {
         
 }
         
-    public void venda(String login){                                                            //Tela principal funcionario
+    public void venda(String login, boolean r){                                                            //Tela principal funcionario
         
     System.out.println("Bem vindo: "+login);    
     do{                   
@@ -264,7 +264,7 @@ public class Telas {
                         if (i.getVenda()>0){
                             
                             System.out.println("Codigo: " +i.getCod()+"\nProduto: " +i.getNome()+"\nDescricao: "+i.getDesc()+"\nQuantidade no carrinho: "
-                                    +i.getVenda()+"\nValor total: "+i.getPreco() * i.getVenda()+"\n");
+                                    +i.getVenda()+"\nValor total: "+i.getPreco() * i.getVenda());
                             y+= i.getPreco() * i.getVenda();
                         }
                     }
@@ -324,7 +324,7 @@ public class Telas {
                                     i.setQtd(j);                                                    //reduzindo a quantidade de vendas no estoque total                                                                           
                                     Venda venda = new Venda(n, login, y);
                                     listVenda.add(venda);
-                                    System.out.println("Copra finalizada com sucesso");                                    
+                                    System.out.println("Compra finalizada com sucesso");                                    
                                 }                         
                             }
 
@@ -346,6 +346,7 @@ public class Telas {
                 y=0;
                 System.out.println("Logout efetuado");
                 r=false;
+                break;
             }
             
             default: 

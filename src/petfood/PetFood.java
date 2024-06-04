@@ -48,12 +48,12 @@ public class PetFood {
                         if (l.equals(i.getLogin()) && s.equals(i.getSenha())){
                                                         
                             if (i.isGerente()){
-                                tela.gerente(l);
+                                tela.gerente(l, r);
                                 break;
                             }    
                             
                             else{
-                                tela.venda(l);
+                                tela.venda(l, r);
                                 break;
                             }    
                         }                                                                                                                                                  

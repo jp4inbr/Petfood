@@ -219,7 +219,29 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |3.7. Lista de riscos 
 
+<table>
 
+<tr>
+<td>N°</td>
+<td>Riscos</td>
+</tr>
+
+<tr>
+<td>01°</td>
+<td>Surgimento de imprevistos com recurso</td>
+</tr>
+
+<tr>
+<td>02°</td>
+<td>Falta de adaptação dos funcionários</td>
+</tr>
+
+<tr>
+<td>03°</td>
+<td>Problemas caso haja erros no cadastro de usuário e produtos </td>
+</tr>
+
+</table>
 
 # |4. Diagramas UML
 

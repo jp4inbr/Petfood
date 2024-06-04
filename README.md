@@ -145,7 +145,33 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |2.6. Premissas
 
-- 
+<table>
+
+<tr>
+<td>N°</td>
+<td>Premissa</td>
+<td>Descrição</td>
+</tr>
+
+<tr>
+<td>01°</td>
+<td>Data de implementação</td>
+<td>É provável que o software seja implementado totalmente em um mês</td>
+</tr>
+
+<tr>
+<td>02°</td>
+<td>Manutenção</td>
+<td>Será feita uma manutenção de mês em mês para que o sistema não apresente muitas falhas</td>
+</tr>
+
+<tr>
+<td>03°</td>
+<td>Desempenho</td>
+<td>O sistema rodará tranquilamente no computador, caso os requisitos sejam satisfeitos</td>
+</tr>
+
+</table>
 
 ### |2.7. Itens fora do Escopo
 

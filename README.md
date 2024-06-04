@@ -237,7 +237,21 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |4.1. Diagrama de Classes
 
-### |4.2. Diagrama de Objetos
+<p align="center">
+ <img src="https://github.com/jp4inbr/Petfood/assets/161530938/e152abb2-77a1-4c3a-ac2f-960074b4ea41" alt="Diagrama de classes"></a>
+</p>
+
+### |4.2. Diagrama de Casos de uso
+
+<p align="center">
+ <img src="https://github.com/jp4inbr/Petfood/assets/161530938/f166864d-4e34-45ac-963f-a4bc523e6f87" alt="Diagrama de casos de uso"></a>
+</p>
+
+### |4.3. Diagrama de Atividades
+
+<p align="center">
+ <img src="https://github.com/jp4inbr/Petfood/assets/161530938/0f1162dd-126b-48e1-a055-9901fb52623e" alt="Diagrama de casos de uso"></a>
+</p>
 
 
 # |5. Apêndice

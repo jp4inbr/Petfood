@@ -9,16 +9,17 @@ import java.util.Scanner;
  * @author Douglas
  */
 
-public class PetFood {
+
+public class PetFood {          
     
-    public static Scanner ler = new Scanner(System.in);    
+    public static Scanner ler = new Scanner(System.in);
 
     public static void main(String[] args) {
         
         ArrayList<Funcionario> listFunc = new ArrayList();
         listFunc.clear();
         Telas tela = new Telas ();        
-        
+
         String s,l,g;
         boolean r = true;
                                       
@@ -48,12 +49,12 @@ public class PetFood {
                         if (l.equals(i.getLogin()) && s.equals(i.getSenha())){
                                                         
                             if (i.isGerente()){
-                                tela.gerente(l, r);
+                                r = tela.gerente(l, r);
                                 break;
                             }    
                             
                             else{
-                                tela.venda(l, r);
+                                r = tela.venda(l, r);
                                 break;
                             }    
                         }                                                                                                                                                  

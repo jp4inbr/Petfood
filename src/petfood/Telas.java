@@ -17,8 +17,8 @@ public class Telas {
     int c,x;
     String n, d;
     double p, pc;   
-        
-    public void gerente(String login, boolean r){                                                          //Tela principal gerente
+    
+    public boolean gerente(String login, boolean r){                                                          //Tela principal gerente
 
         System.out.println("Bem vindo: "+login);
         do{                                                                                 
@@ -183,9 +183,10 @@ public class Telas {
             
         }while(r);
         
+        return true;
 }
         
-    public void venda(String login, boolean r){                                                            //Tela principal funcionario
+    public boolean venda(String login, boolean r){                                                            //Tela principal funcionario
         
     System.out.println("Bem vindo: "+login);    
     do{                   
@@ -353,6 +354,8 @@ public class Telas {
                 System.out.println("Opcao invalida");
         }
     }while(r);
+    
+    return true;
 }
     
     //Exibir historico de vendas

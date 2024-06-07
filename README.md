@@ -32,7 +32,7 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 <tr>
 <td>02°</td>
 <td>Vendas(Pré-venda)</td>
-<td>Tela onde será efetuada as vendas do estbelecimento</td>
+<td>Tela onde será efetuada as vendas do estabelecimento</td>
 </tr>
 
 <tr>
@@ -174,6 +174,8 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 </table>
 
 ### |2.7. Itens fora do Escopo
+
+- A coleta de dados não é necessária para as funcionalidades do software, respeitando as diretrizes da LGPD.
 
 # |3. Requisitos Específicos
 

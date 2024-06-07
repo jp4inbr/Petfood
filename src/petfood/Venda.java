@@ -4,6 +4,7 @@ package petfood;
  *
  * @author Douglas
  */
+
 public class Venda {
     
     private String data, vendedor;

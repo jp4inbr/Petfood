@@ -2,23 +2,26 @@ package petfood;
 
 import java.util.ArrayList;
 import static petfood.PetFood.ler;
+import static petfood.PetFood.listFunc;
 
 /**
  *
  * @author Douglas
  */
+
 public class Telas {
     
     ArrayList<Produto> listProd = new ArrayList();    
     ArrayList<Venda> listVenda = new ArrayList();
-    
+  
+    int codFunc =1;                                                                             //Contador do codigo dos funcionários
     int codProd =1;                                                                             //Contador do codigo dos produtos
     double y=0;                                                                                 //Contador do valor total da compra
     int c,x;
-    String n, d;
-    double p, pc;   
+    String n, d, l, s, g;
+    double p, pc;
     
-    public boolean gerente(String login, boolean r){                                                          //Tela principal gerente
+    public int gerente(String login, boolean r){                                                          //Tela principal gerente
 
         System.out.println("Bem vindo: "+login);
         do{                                                                                 
@@ -31,12 +34,13 @@ public class Telas {
                                5- Alterar preco do produto
                                6- excluir produto
                                7- Acessar historico de venda
+                               8- Cadastrar novo funcionario
                                0- Voltar para tela inicial""");
             x = ler.nextInt();
             
             switch (x){
                                 
-                case 1: {                                                                       //Cadastar novo produto
+                case 1: {                                                                             //Cadastar novo produto
                     
                       System.out.println("Digite o nome do produto");
                       n = ler.next();
@@ -54,13 +58,13 @@ public class Telas {
                       break;
                 }
                                 
-                case 2: {                                                                     //Ir para tela de vendas
+                case 2: {                                                                              //Ir para tela de vendas
 
-                    this.venda(login, r);
+                    venda(login, r);
                     break;
                 }               
                 
-                case 3: {                                                                     //Alterar quantidade no estoque
+                case 3: {                                                                            //Alterar quantidade no estoque
                     
                     if (verListProd())                                                   
                         break;                                                                 
@@ -84,7 +88,7 @@ public class Telas {
                     break;
                 }
                                 
-                case 4: {                                                                        //Listar produtos em estoque
+                case 4: {                                                                                //Listar produtos em estoque
                     
                     if (verListProd())
                         break;                        
@@ -99,8 +103,8 @@ public class Telas {
                 
                     break;
                 }
-                                
-                case 5: {                                                                         //Alterar preço de venda
+                                        
+                case 5: {                                                                                 //Alterar preço de venda
                     
                     if (verListProd())
                         break;                  
@@ -126,8 +130,8 @@ public class Telas {
                     break;
                 }
                                 
-                case 6: {                                                                       //Excluir o produto
-                    
+                case 6: {                                                                                 //Excluir o produto
+                        
                     if (verListProd())
                         break;
                     
@@ -164,13 +168,42 @@ public class Telas {
                     break;
                 }
                                 
-                case 7: {                                                                         //Exibir historico de vendas
+                case 7: {                                                                                  //Exibir historico de vendas
                     
-                    this.hist_ven();
+                    hist_ven();
                     break;
                 }
+                
+                case 8: {                                                                                     //Efetuando cadastro                                                                                         
+                    
+                    System.out.println("Digite o novo login para cadastro");
+                    l = ler.next();
+                    System.out.println("Digite a senha do novo login");
+                    s = ler.next();
+                    System.out.println("Funcionario e um gerente? s/n");
+                    g = ler.next();
+
+                      if (confirmar(g))                                                                      //Validação do texto digitado                                                                  
+                          break;
+
+                      else if ("s".equals(g)){                                                         //Cadastro de Gerente
+                          Funcionario func = new Funcionario (l, s, true, codFunc);
+                          listFunc.add(func);
+                          codFunc++;
+                          System.out.println("Gerente cadastrado com sucesso");
+                          break;
+                      }
+
+                      else {                                                                             //Cadastro de Funcionário
+                          Funcionario func = new Funcionario(l,s,false,codFunc);
+                          listFunc.add(func);
+                          codFunc++;
+                          System.out.println("Funcionario cadastrado com sucesso");
+                          break;
+                      }    
+                }
                                 
-                case 0: {                                                                           //Voltar para o login
+                case 0: {                                                                                 //Voltar para o login
                     
                     System.out.println("Logout efetuado");
                     r=false;
@@ -183,10 +216,10 @@ public class Telas {
             
         }while(r);
         
-        return true;
+        return 1;
 }
         
-    public boolean venda(String login, boolean r){                                                            //Tela principal funcionario
+    public int venda(String login, boolean r){                                                            //Tela principal funcionario
         
     System.out.println("Bem vindo: "+login);    
     do{                   
@@ -198,9 +231,9 @@ public class Telas {
                             4- Limpar lista de compras 
                             5- Finalizar compra
                             0- Sair do programa""");
-            int s = ler.nextInt();
+            x = ler.nextInt();
             
-        switch (s){
+        switch (x){
                        
             case 1: {                                                                           //Listar produtos
                     
@@ -242,7 +275,6 @@ public class Telas {
 
                                         else {
                                             i.setVenda(c);                                        
-                                            //listComp.add(i);
                                             System.out.println("Quantidade adicionada ao carrinho");
                                             break;
                                         }                                                                                
@@ -288,7 +320,7 @@ public class Telas {
                   else if (n.equals("s")){
                       
                       System.out.println("Carrinho foi limpo");
-                      this.clearList();                     
+                      clearList();                     
                       break;
                   }
                   
@@ -320,16 +352,14 @@ public class Telas {
                                 if (i.getVenda()>0){
 
                                     y+= i.getPreco() * i.getVenda();                                                                           
-                                    int j = i.getQtd();
-                                    j-=i.getVenda();
-                                    i.setQtd(j);                                                    //reduzindo a quantidade de vendas no estoque total                                                                           
+                                    i.setQtd((i.getQtd())-(i.getVenda()));                                                    //reduzindo a quantidade de vendas no estoque total                                                                           
                                     Venda venda = new Venda(n, login, y);
                                     listVenda.add(venda);
                                     System.out.println("Compra finalizada com sucesso");                                    
                                 }                         
                             }
 
-                            this.clearList();
+                            clearList();
                             y=0;
                         }
 
@@ -343,7 +373,7 @@ public class Telas {
             }
             
             case 0: {
-                this.clearList();
+                clearList();
                 y=0;
                 System.out.println("Logout efetuado");
                 r=false;
@@ -355,7 +385,7 @@ public class Telas {
         }
     }while(r);
     
-    return true;
+    return 1;
 }
     
     //Exibir historico de vendas
@@ -411,7 +441,7 @@ public class Telas {
         }
             System.out.println("Codigo nao encontrado");  
             return false;
-    }
+    }    
     
     
 }

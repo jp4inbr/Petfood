@@ -181,12 +181,13 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |3.1. Requisitos Funcionais 
 
-- RF01 - O sistema deverá solicitar ao usuário seu login e senha e verificar se o mesmo possui permissão de acesso ao sistema.
-- RF02 - O sistema encaminhará o usuário à tela de Vendas automaticamente após o login (Caso o usuário logado for um funcionário). 
-- RF03 - O sistema deve permitir a criação, exclusão e alteração dos itens no estoque.
-- RF04 - O sistema deve armazenar o histórico de vendas, incluindo o valor total, usuário responsável e a data.
-- RF05 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados.
-- RF06 - O sistema deve permitir a criação, exclusão e alteração dos usuários.
+- RF01 - O sistema terá um login de admin que já estará cadastrado no sistema
+- RF02 - O sistema deverá solicitar ao usuário seu login e senha e verificar se o mesmo possui permissão de acesso ao sistema.
+- RF03 - O sistema encaminhará o usuário à tela de Vendas automaticamente após o login (Caso o usuário logado for um funcionário). 
+- RF04 - O sistema deve permitir a criação, exclusão e alteração dos itens no estoque.
+- RF05 - O sistema deve armazenar o histórico de vendas, incluindo o valor total, usuário responsável e a data.
+- RF06 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados.
+- RF07 - O sistema deve permitir a criação, exclusão e alteração dos usuários.
 
 ### |3.2. Requisitos não Funcionais
 
@@ -279,28 +280,30 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 
 ### |Critério de aceite
 
-- Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo de vendas.
-- Caso o usuário seja um gerente, será redirecionado para o menu, onde aparecerá 4 campos:
-  - Campo para **Vendas** .
-  - Campo para **Cadastro de usuários** .
-  - Campo para **Estoque** .
-  - Campo para **Financeiro** .
+- Caso o usuário seja um funcionário, será automaticamente redirecionado para o campo **Realizar uma venda**.
+- Caso o usuário seja um gerente, será redirecionado para o menu, onde aparecerão 9 campos: 
+  - Campo **Cadastro de produtos** .
+  - Campo **Realizar uma venda** .
+  - Campo **Alterar estoque de um produto** .
+  - Campo **Verificar Estoque** .
+  - Campo **Alterar preço do produto** .
+  - Campo **Excluir produto** .
+  - Campo **Acessar histórico de venda** .
+  - Campo **Cadastrar novo Funcionário** .
+  - Campo **Voltar para tela inicial** .
 
-### |História 3 - Aba de Vendas (Complexidade 8 Interface com múltiplos campos, lógica de vendas, cancelamento, pesquisa | Tempo: 4 dias)
+### |História 3 - Realizar uma venda (Complexidade 8 Interface com múltiplos campos, lógica de vendas, cancelamento, pesquisa | Tempo: 4 dias)
 
-- Como funcionário/gerente quero acessar a aba de **Vendas** para vender/pesquisar um produto.
+- Como funcionário/gerente quero acessar a aba **Realizar uma venda** para vender/pesquisar um produto.
 
 ### |Critério de aceite
 
 - Tela de Vendas.
-- Campo com a lista de produtos escolhidos, quantidade, valor unitário, valor total (vlor unitário x quantidade) e código.
-- Campo com as formas de pagamento (dinheiro, cartão, pix).
-- Campo Aplicar desconto.
-- Campo para cancelar venda.
-  - Caso escolha a opção cancelar venda, todos os produtos escolhidos sairão da venda.
-- Campo para cancelar um produto.
-  - Caso escolha a opção cancelar um produto, será permitido a escolha de um produto para ser retirado da venda .
-- Campo para pesquisa de produtos.
+- Campo com a lista de produtos escolhidos, quantidade, valor unitário, valor total (valor unitário x quantidade) e código.
+- Campo para o pagamento .
+- Campo para limpar lista de compras.
+  - Caso escolha a opção limpar lista de compras, todos os produtos escolhidos sairão da venda.
+- Campo para consulta de produtos.
 - Campo onde mostra qual usuário está conectado.
 - Campo para Logoff para sair do usuário conectado .
 - Campo com o valor total dos produtos (soma dos valores totais).

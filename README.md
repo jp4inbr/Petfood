@@ -188,6 +188,15 @@ Ele será capaz de consultar, cadastrar e alterar produtos no estoque, além de 
 - RF05 - O sistema deve armazenar o histórico de vendas, incluindo o valor total, usuário responsável e a data.
 - RF06 - O sistema deve permitir consultar e alterar o preço dos produtos cadastrados.
 - RF07 - O sistema deve permitir a criação, exclusão e alteração dos usuários.
+- RF08 - O sistena deve permitir a criação de um catálogo de espécie.
+- RF09 - O sistema deve permitir o agendamento de consultas de pets presenciais ou a distância.
+- RF10 - O sistema deve permitir uma área para o acumulo de documentários e curiosidades sobre animais.
+- RF11 - O sistema deve permitir a compra e venda de animais silvestres de forma legalizada.
+- RF12 - O sistema deve permitir a realização de cursos para obtenção de certificação para a criação de animais silvestres.
+- RF13 - O sistema deve permitir a mentoria para o cuidado dosméstico de animais silvestres.
+- RF14 - O sistema deve permitir uma área de hotel pet, onde poderá ser realizado a hospedagem de animais para casos de viagens dos donos.
+- RF15 - O sistema deve permirtir voice chat e vídeo chat.
+
 
 ### |3.2. Requisitos não Funcionais
 
